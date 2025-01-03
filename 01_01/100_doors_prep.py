@@ -6,10 +6,10 @@ list = []
 #print(doors)
 
 for i in range(0,100):
-    for j in range(0,100,i+1):
+    for j in range(i,100,i+1):
         doors[j] = not doors[j]
 print(doors)
 for i in range(0,100):
     if doors[i] == True:
-        list.append(i)
+        list.append(i+1)
 print(list)
